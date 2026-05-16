@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+  </defs>
+  <rect width="900" height="600" fill="url(#bg)" rx="40" />
+  <g transform="translate(100,120)">
+    <rect x="0" y="0" width="700" height="360" rx="34" fill="#111827" stroke="#334155" stroke-width="2" />
+    <rect x="32" y="32" width="240" height="120" rx="24" fill="#0ea5e9" opacity="0.85" />
+    <rect x="298" y="32" width="330" height="120" rx="24" fill="#7c3aed" opacity="0.85" />
+    <rect x="32" y="178" width="596" height="122" rx="24" fill="#334155" />
+    <circle cx="80" cy="246" r="28" fill="#38bdf8" />
+    <circle cx="146" cy="246" r="28" fill="#818cf8" />
+    <circle cx="212" cy="246" r="28" fill="#5eead4" />
+    <rect x="288" y="212" width="280" height="8" rx="4" fill="#94a3b8" />
+    <rect x="288" y="242" width="220" height="8" rx="4" fill="#94a3b8" />
+  </g>
+  <text x="80" y="520" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="34">AI Media Studio</text>
+</svg>

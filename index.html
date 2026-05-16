@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wind</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#0f172a" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">Wind</span>
+        <div>
+          <h1>Wind</h1>
+          <p>Chỉnh sửa ảnh, tạo video và ghép video cùng Windy.</p>
+        </div>
+      </div>
+      <button id="installButton" class="button button-secondary">Cài đặt App</button>
+    </header>
+
+    <main>
+      <section class="hero-panel">
+        <div>
+          <p class="eyebrow">Ứng dụng sáng tạo Windy</p>
+          <h2>Biến ý tưởng của bạn thành hình ảnh và video thật nhanh.</h2>
+          <p>Upload ảnh, chỉnh sửa và tạo nội dung video bằng Windy để hoàn thành mục tiêu sáng tạo.</p>
+          <div class="hero-actions">
+            <a href="#editor" class="button button-primary">Bắt đầu</a>
+            <a href="#features" class="button button-secondary">Tính năng</a>
+          </div>
+        </div>
+        <div class="hero-preview">
+          <img src="images/preview.svg" alt="Wind preview" />
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <h2>Tính năng nổi bật</h2>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Chỉnh sửa ảnh Windy</h3>
+            <p>Áp dụng bộ lọc, xóa phông, làm đẹp, thay màu nền và sáng tạo ảnh theo prompt Windy.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Tạo video Windy</h3>
+            <p>Tạo video từ nội dung văn bản, ảnh mẫu hoặc ý tưởng một cách tự động.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Ghép video thông minh</h3>
+            <p>Ghép nhiều đoạn clip, thêm hiệu ứng chuyển cảnh và nhạc nền bằng Windy.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Trợ lý mục tiêu</h3>
+            <p>Windy gợi ý cấu trúc nội dung và giúp bạn hoàn thành mục tiêu sáng tạo nhanh hơn.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="editor">
+        <div class="editor-grid">
+          <div class="panel">
+            <h2>Chỉnh sửa ảnh Windy</h2>
+            <div class="control-group">
+              <label>Upload ảnh</label>
+              <input id="imageUpload" type="file" accept="image/*" />
+            </div>
+            <div class="control-group">
+              <label>Prompt Windy</label>
+              <textarea id="imagePrompt" placeholder="Ví dụ: 'Thêm hiệu ứng neon, phong cách cyberpunk'..."></textarea>
+            </div>
+            <div class="button-row">
+              <button id="applyFilter" class="button button-primary">Áp dụng bộ lọc</button>
+              <button id="enhanceImage" class="button button-secondary">Windy Enhance</button>
+            </div>
+            <div class="canvas-card">
+              <canvas id="imageCanvas" width="640" height="380"></canvas>
+            </div>
+          </div>
+
+          <div class="panel">
+            <h2>Tạo video Windy</h2>
+            <div class="control-group">
+              <label>Ý tưởng video</label>
+              <textarea id="videoPrompt" placeholder="Ví dụ: 'Video quảng cáo giày thể thao phong cách đô thị'..."></textarea>
+            </div>
+            <div class="control-group">
+              <label>Thêm nhạc nền</label>
+              <input id="musicPrompt" type="text" placeholder="Ví dụ: 'Nhạc EDM sôi động'" />
+            </div>
+            <div class="button-row">
+              <button id="generateVideo" class="button button-primary">Tạo video</button>
+              <button id="previewVideo" class="button button-secondary">Xem trước</button>
+            </div>
+            <div class="video-player">
+              <video id="outputVideo" controls></video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="assistant">
+        <h2>Trợ lý Windy</h2>
+        <div class="assistant-panel">
+          <div class="assistant-input">
+            <label>Gọi Windy hỗ trợ</label>
+            <textarea id="assistantPrompt" placeholder="Mô tả mục tiêu của bạn..."></textarea>
+            <button id="assistantRun" class="button button-primary">Nhận gợi ý</button>
+          </div>
+          <div class="assistant-output" id="assistantOutput">
+            <p>Windy sẽ đề xuất kế hoạch chỉnh sửa ảnh/video để đạt mục tiêu của bạn.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p>© 2026 Wind. Ứng dụng web PWA cho chỉnh sửa ảnh, tạo video bằng Windy.</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

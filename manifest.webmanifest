@@ -1,0 +1,15 @@
+{
+  "name": "Wind",
+  "short_name": "Wind",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#070b17",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "images/icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}

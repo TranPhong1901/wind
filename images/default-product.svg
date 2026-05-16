@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <rect width="600" height="600" rx="40" fill="#0f172a" />
+  <rect x="90" y="160" width="420" height="240" rx="40" fill="#1e293b" />
+  <path d="M150 220c40-70 120-80 180-40s120 90 180 30" stroke="#38bdf8" stroke-width="20" fill="none" stroke-linecap="round" />
+  <circle cx="200" cy="380" r="36" fill="#38bdf8" />
+  <circle cx="400" cy="380" r="36" fill="#38bdf8" />
+  <text x="50%" y="520" text-anchor="middle" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="34">AI Media</text>
+</svg>

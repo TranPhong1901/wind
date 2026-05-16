@@ -1,0 +1,15 @@
+{
+  "name": "wind",
+  "version": "1.0.0",
+  "description": "Wind - ứng dụng PWA chỉnh sửa ảnh và tạo video AI",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2"
+  }
+}
